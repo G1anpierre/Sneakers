@@ -1,0 +1,42 @@
+
+
+.img-container {
+
+    .template {
+        background-size: 60%;
+        top: 0;
+        left: 0;
+        background-position: top center;
+        width: 80%;
+        height: 80%;
+        background-repeat: no-repeat;
+
+    }
+
+    .red {
+        @extend .template;
+        background-image: url(./images/red.jpg);
+    }
+
+    .blue {
+        @extend .template;
+        background-image: url(./images/blue.jpg);
+    }
+
+    .green {
+        @extend .template;
+        background-image: url(./images/green.jpg);
+    }
+
+    .purple {
+        @extend .template;
+        background-image: url(./images/purple.jpg);
+    }
+
+    .brown {
+        @extend .template;
+        background-image: url(./images/brown.jpg);
+    }
+
+    
+}
