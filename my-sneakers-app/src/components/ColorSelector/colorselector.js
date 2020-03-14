@@ -11,21 +11,27 @@ const ColorSelector = props => {
         
         return colorsArr.map( element => {
             return (
-                <option value={element} value={element}>{element}</option>
+                <option value={element} key={element}>{element}</option>
             )
-        });
-        
+        });   
+    }
+
+    function onChangeColor(e) {
+        console.log(e.target.value);
+        props.handleColorChange(e.target.value);
     }
 
 
     return (
 
-        
-        <div className="field-group">
-            <label >Color:</label>
-            <select defaultValue={props.color} name="colorOptions" id="color-options">
+
+        <div class="input-group mb-3">
+            <select class="custom-select" id="inputGroupSelect02" defaultValue={props.color}  onChange={onChangeColor}>
                 {colorOptions()}
             </select>
+            <div class="input-group-append">
+                <label class="input-group-text" for="inputGroupSelect02">Shoe Color</label>
+            </div>
         </div>
     )
 }

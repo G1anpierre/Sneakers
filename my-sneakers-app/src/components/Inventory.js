@@ -11,6 +11,8 @@
   
     allColors: ['red', 'blue', 'green', 'purple', 'brown'],
   
+    // disponibility of colors by size
+
     bySize: {
       "7": [
         "red", "blue"
@@ -49,6 +51,8 @@
         "brown", "green", "purple"
       ]
     },
+
+    // disponibiliti of sizes by colors
   
     byColor: {
       "red" : ["7", "7.5", "8", "8.5"],

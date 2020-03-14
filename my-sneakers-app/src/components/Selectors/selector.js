@@ -18,17 +18,20 @@ const Selector = props => {
         })
     }
 
+    function onChangeSize(event) {
+        props.handleSizeChange(event.target.value);
+
+    }
+
     return (
-        <div className="selectors">
-            <div className="field-group">
-                <label htmlFor="size-options">Size:</label>
-                <select defaultValue={props.size} name="sizeOptions" id="size-options">
-
-                    {sizeOptions()}
-
-                </select>
+        
+        <div class="input-group mb-3">
+            <select defaultValue={props.size} class="custom-select" id="inputGroupSelect02" onChange={onChangeSize}>
+                 {sizeOptions()}
+            </select>
+            <div class="input-group-append">
+            <label class="input-group-text" htmlFor="inputGroupSelect02">Shoe Size</label>
             </div>
-            
         </div>
     )
 }
