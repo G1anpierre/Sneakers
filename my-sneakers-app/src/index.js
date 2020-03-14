@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './custom.scss';
 import './index.css';
-import Inventory from './components/Inventory';
+
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 
-ReactDOM.render(<App inventory={Inventory}/>, document.getElementById('root'));
+ReactDOM.render(<App/>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
